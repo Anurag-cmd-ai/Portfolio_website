@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- Header and Navigation (Existing) --- */
+.main-header {
+    background: var(--card-background);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(113, 15, 15, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-image: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    -webkit-text-fill-color: yellow;
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    -webkit-text-fill-color: yellow;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-section {
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Background Overlay for better text readability */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Semi-transparent dark overlay */
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section .cta-button {
+    z-index: 2;
+    position: relative;
+}
+
+.hero-section h1 {
+    margin-left: 90px;
+    font-family: sans-serif;
+    font-size: 60px;
+}
+
+.hero-section p {
+    font-size: 20px;
+}
+
+
+.cta-button {
+    background: var(--primary-color);
+    color: ghostwhite;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-left: 10px;
+    transition: background 0.3s;
+}
+
+.cta-button {
+    background: red;
+    margin-right: 30px;
+}
+
+/* --- Content Sections (Existing) --- */
+.content-section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-playful-portfolio-pink-memphis-image_593415.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+.content-section1 {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-playful-portfolio-pink-memphis-image_593415.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content-section2 {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210324/pngtree-abstract-playful-portfolio-pink-memphis-image_593415.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    -webkit-text-fill-color: whitesmoke;
+    background-image: url("https://t3.ftcdn.net/jpg/07/86/26/00/360_F_786260019_hvWGgHqLXJgiLMogKzGEShyR5oiPv8uq.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.content-section1 h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-left: 30px;
+    -webkit-text-fill-color: whitesmoke;
+    font-size: 2rem;
+    background-image: url("https://t3.ftcdn.net/jpg/07/86/26/00/360_F_786260019_hvWGgHqLXJgiLMogKzGEShyR5oiPv8uq.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+
+.content-section2 h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-left: 10px;
+    -webkit-text-fill-color: whitesmoke;
+    font-size: 2rem;
+    background-image: url("https://t3.ftcdn.net/jpg/07/86/26/00/360_F_786260019_hvWGgHqLXJgiLMogKzGEShyR5oiPv8uq.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.content-section p {
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.content-section1 {
+
+    font-size: 25px;
+}
+
+/* --- Project Grid (Existing) --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.tech-stack {
+    font-size: 30px;
+    -webkit-text-fill-color: red;
+    font-family: sans-serif;
+
+    margin: 10px 0;
+}
+
+/* --- Contact Form (Existing) --- */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* --- Footer (Existing) --- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: var(--card-background);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+        border-top: 1px solid #eee;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}
